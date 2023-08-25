@@ -1,0 +1,56 @@
+.company {
+    padding-top: 68px;
+    padding-bottom: 70px;
+    background-color: #fff;
+
+    h2 {
+        color: #0D4C93;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+}
+
+.company__inner{
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .circle1{
+        position: absolute;
+        margin-left: -150px;
+        width: 574px;
+        height: 574px;
+        border-radius: 574px;
+        background: #FFF;
+        border: 40px solid rgba(0, 201, 201, 0.20);
+    }
+    .circle2{
+        width: 458px;
+        height: 458px;
+        border-radius: 458px;
+        border: 40px solid rgba(13, 76, 147, 0.20);
+    }
+    .circle3{
+        width: 352px;
+        height: 352px;
+        border-radius: 352px;
+        border: 40px solid rgba(120, 223, 242, 0.20);
+    }
+}
+.company__info{
+    
+    width: 100%;
+    height: 504px;
+    border-radius: 0px 50px 50px 0px;
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0.00) 100%);
+}
