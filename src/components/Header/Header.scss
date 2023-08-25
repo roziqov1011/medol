@@ -1,0 +1,118 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.header__logo_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    .header__logo__item{
+        display: flex;
+        align-items: center;
+        width: 233px;
+        margin-right: 41px;
+    }
+    .header__logo__item:nth-child(3){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+.header__icon{
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    margin-right: 20px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+
+.header__long__list{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        display: flex;
+        align-items: center;
+        margin-right: 57px;
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 14px 10px;
+        &:first-child{
+            border-radius: 50%;
+            width: 50px !important;
+            height: 50px !important;
+        }
+        a{
+            display: flex;
+            align-items: center;
+        }
+        .item__long{
+            background: transparent;
+            border: none;
+        }
+    }
+}
+.nav{
+    margin-top: 48px;
+}
+.nav__list{
+    border-radius: 35px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+}
+
+.nav__item{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    border-right: 1px solid #F2F2F2;
+    &:last-child{
+        border: none;
+    }
+    a{
+    padding: 24px 24px;
+        text-align: center;
+        display: block;
+        color: #0D4C93;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .active{
+          color: #00C9C9;  
+          position: relative;
+          &::before{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            background-color: #00C9C9;
+          }
+    }
+}
