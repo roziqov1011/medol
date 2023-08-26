@@ -10,6 +10,10 @@ function Header() {
 
   const [active, setActive] = useState(1)
   return (
+    <>
+    <h1 class="site__name">
+    medol
+  </h1>
     <header className='header'>
       <div className="header__top container">
         <ul className='header__logo_list'>
@@ -76,6 +80,7 @@ function Header() {
          </ul>
       </nav>
     </header>
+    </>
   )
 }
 
