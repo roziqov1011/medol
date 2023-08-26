@@ -2,6 +2,8 @@ import './App.scss';
 import Company from './components/Company/Company';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import News from './components/News/News';
+import Partners from './components/Partners/Partners';
 import Production from './components/Production/Production';
 import Services from './components/Services/Services';
 
@@ -13,6 +15,8 @@ function App() {
       <Production/>
       <Services/>
       <Company/>
+      <News/>
+      <Partners/>
       </>
   );
 }
