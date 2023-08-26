@@ -1,8 +1,28 @@
 .partners{
 background-color: #fff;
+padding-bottom: 134px;
+h2{
+  color: #0D4C93;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-top: 100px;
+}
 }
 
 .partners__list{
+  .swiper-pagination-bullet{
+    width: 25px;
+    height: 25px;
+    background: #fff !important;
+    border: 1px solid #00C9C9;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #00C9C9 !important;
+}
     height: 400px;
     .swiper-button-next, .swiper-button-prev{
         background: linear-gradient(180deg, #0D4C93 0%, #00C9C9 100%);
@@ -34,4 +54,16 @@ background-color: #fff;
         justify-content: center;
         align-items: center;
       }
+      .swiper-slide img {
+        
+      }
 }
+
+.partners__item{
+    border-radius: 30px;
+    border: 1px solid #ECECEC;
+    background: #FFF;
+    width: 235px;
+    height: 130px;
+    padding: 9px 30px;
+  }

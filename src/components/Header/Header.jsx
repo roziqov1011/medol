@@ -9,12 +9,24 @@ import logo from '../../assets/img/logo.svg'
 function Header() {
 
   const [active, setActive] = useState(1)
+  const  [bg, setBg] = useState(false)
+  document.addEventListener("scroll", (event) => {
+    console.log( window.innerWidth);
+    if(window.scrollY >= 146){
+     
+      setBg(true)
+    }else{
+      setBg(false)
+    }
+    }
+  );
+  console.log(bg);
   return (
     <>
     <h1 class="site__name">
     medol
-  </h1>
-    <header className='header'>
+    </h1>
+    <header className={bg ? 'header header__bg': 'header'}>
       <div className="header__top container">
         <ul className='header__logo_list'>
           <li className='header__logo__item'>
@@ -57,7 +69,7 @@ function Header() {
           </li>
         </ul>
       </div>
-      <nav className='nav container'>
+      <nav className={bg? 'nav container nav__m': 'nav container'}>
          <ul className='nav__list'>
           <li className='nav__item'>
             <a onClick={()=> setActive(1)} className={active === 1 ? 'active': null} href="#">МАГАЗИН</a>
